@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples/examples.css" />
+</head>
+<body>
+<div id="app">
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">Accueil</a></li>
+        <li data-menuanchor="page2"><a href="#page2">A propos</a></li>
+        <li data-menuanchor="page3"><a href="#page3">Compétences</a></li>
+        <li data-menuanchor="page3"><a href="#page4">Projet</a></li>
+        <li data-menuanchor="page3"><a href="#page5">Contact</a></li>
+    </ul>
+</div>
+
+<div id="fullpage">
+	<div class="section active" id="section0"><h1>Bienvenue sur mon Portfolio</h1></div>
+
+  <div class="section active" id="section1">
+   <!-- <img src="examples/imgs/boissinotc.jpg" alt="Cool" /> -->
+    <h1>A propos</h1>
+    <br>
+    <p>Je m'appelle Cédric Boissinot et je suis actuellement en 2ème année du BTS SIO option SLAM</p>
+  </div>
+	<div class="section" id="section2">
+	    <div class="slide "><h1>Mes compétences</h1></div>
+	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+	</div>
+	<div class="section" id="section3"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section4"><h1>Contact</h1></div>
+  <div class="section" id="section5"><h1>Just the simplest demo ever</h1></div>
+</div>
+
+
+
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+    licenseKey : 'OPEN-SOURCE-GPLV3-LICENSE',
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff','#4B6B67'],
+    anchors:['firstPage', 'secondPage', 'thirdPage'],
+    anchors:['page1','page2','page3','page4','page5']
+	});
+</script>
+</body>
+</html>
